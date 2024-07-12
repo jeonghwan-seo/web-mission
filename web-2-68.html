@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    const a = prompt("첫 번째 숫자를 입력해주세요");
+    const b = prompt("두 번째 숫자를 입력해주세요");
+    
+    for(let num = a; num <= b; num ++){ 
+        alert(num); 
+    }
+
+    const s = prompt("문자열 입력해주세요"); 
+    if(s === "BBQ") { 
+        let result = 0 ; 
+        for(let v = 1; v <= 30; v ++) { 
+            result += v; 
+        }
+        alert(result); 
+    }
+    else if(s === "KFC") { 
+        for(let num = 1; num <= 30; num += 2) { 
+            alert(num); 
+        }
+    }
+    else {
+        alert("MOMS"); 
+    }
+
+    const first = prompt("1번 숫자"); 
+    const second = prompt("2번 숫자"); 
+    const third = prompt("3번 숫자"); 
+    
+    if(first >= second && first >= third){
+        alert(first); 
+    }
+    else if (second >= third){ 
+        alert(second); 
+    }
+    else {
+        alert(third); 
+    }
+</script>
