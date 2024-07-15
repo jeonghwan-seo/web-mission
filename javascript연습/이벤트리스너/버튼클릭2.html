@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">클릭시 랜덤한 버튼이 나타납니다</button>
+    <button id="btn2" >랜덤한 겂을 나타내 줍니다</button>
+</body>
+</html>
+
+<script>
+    const btn = document.querySelector("#btn1"); 
+    btn.addEventListener("click", function alertRandomDigit(){
+        num = Math.random() * 10; 
+        num = Math.ceil(num); 
+        alert(num); 
+    })
+    
+
+
+</script>
