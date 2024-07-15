@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="shortcut_list"><li class="shortcut_item"><a href="https://mail.naver.com" class="link_service" target="_blank"><span class="service_icon type_mail"></span><span class="service_name">메일</span></a></li><li class="shortcut_item"><a href="https://cafe.naver.com" class="link_service" target="_blank"><span class="service_icon type_cafe"></span><span class="service_name">카페</span></a></li><li class="shortcut_item"><a href="https://blog.naver.com" class="link_service" target="_blank"><span class="service_icon type_blog"></span><span class="service_name">블로그</span></a></li><li class="shortcut_item"><a href="https://shopping.naver.com/home" class="link_service" target="_blank"><span class="service_icon type_shopping"></span><span class="service_name">쇼핑</span></a></li><li class="shortcut_item"><a href="https://news.naver.com/" class="link_service" target="_blank"><span class="service_icon type_news"></span><span class="service_name">뉴스</span></a></li><li class="shortcut_item"><a href="https://finance.naver.com/" class="link_service" target="_blank"><span class="service_icon type_stock"></span><span class="service_name">증권</span></a></li><li class="shortcut_item"><a href="https://land.naver.com/" class="link_service" target="_blank"><span class="service_icon type_real"></span><span class="service_name">부동산</span></a></li><li class="shortcut_item"><a href="https://map.naver.com" class="link_service" target="_blank"><span class="service_icon type_map"></span><span class="service_name">지도</span></a></li><li class="shortcut_item"><a href="https://comic.naver.com" class="link_service" target="_blank"><span class="service_icon type_webtoon"></span><span class="service_name">웹툰</span></a></li><li class="shortcut_item"><a href="https://chzzk.naver.com/" class="link_service" target="_blank"><span class="service_icon"><img src="https://s.pstatic.net/static/www/mobile/edit/20240112_1095/upload_1705057885416AaxUM.png" width="40" height="40" class="service_img" alt="치지직"></span><span class="service_name">치지직</span></a></li><li class="shortcut_item"><a href="#" class="link_service" role="button"><span class="service_icon type_more"></span><span class="blind">바로가기 펼침</span></a></li><li class="shortcut_item"><a href="https://siape.veta.naver.com/rd?rk=20xXJNXOYAzmZ-x3iqEn2g&amp;eltts=%2FBfNbxrcvDg1ZTmWN0SA2A%3D%3D&amp;elu=580EC7E8F47DABC779158DF45A6F2BA5F697EF8761C7F6BA6A9552F336B539001340C2DBB9E71E0990D8A1FA70304C8ED1B21C777A5191B0657873774C9CB097195B23F8B54B13F469A1EF9975446FDE32CEAF587552019DE7DBFA17B03FB6B3AA3AE9B2671C052DB6158429C8F51AB7E4E53433873348CE64C98B72BCAEC0D4&amp;tr=ndp" class="link_service" target="_blank"><span class="service_icon"><span class="service_ad" style="background-image: url(&quot;https://ssl.pstatic.net/melona/libs/1504/1504299/010d350a2e766e020c8f_20240712192040899.png&quot;);"></span></span><span class="service_name">서울디지털대</span><i class="ico_ad"><span class="blind">AD</span></i></a></li></ul>
+</body>
+</html>
+
+<script>
+    let menu_arr = document.querySelectorAll('.service_name'); 
+    
+    let text_arr = []
+    for(let i = 0 ; i < menu_arr.length; i ++) { 
+        text_arr.push(menu_arr[i].textContent); 
+    }
+
+    for(let i = 0 ; i < text_arr.length;i ++) { 
+        alert(text_arr[i]); 
+    }
+
+</script>
