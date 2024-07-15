@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id='id' value="" placeholder="아이디">
+    <br>
+    <input type="password" id='pw' value="" placeholder="비밀번호">
+    <br>
+    <br>
+    <button type="button" id="register" value="register">회원가입하기</button>
+</body>
+
+<script>
+    const btn = document.querySelector("#register");
+    const id_frame = document.querySelector("#id"); 
+    const pw_frame = document.querySelector("#pw"); 
+
+    btn.addEventListener("click", function(e){
+        
+        if(id_frame.value.trim() === ""){ 
+            alert("id 를 입력해주세요"); 
+            return; 
+        }
+        if(pw_frame.value.trim() === ""){ 
+            alert("pw 를 입력해주세요"); 
+            return; 
+        }
+        alert("회원가입 완료!"); 
+    }); 
+
+</script>
+</html>
