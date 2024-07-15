@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    for(let num = 1 ; num <= 5 ;num ++) { 
+        let btn = document.createElement('button'); 
+        let txt = document.createTextNode(String(num)); 
+        btn.append(txt); 
+        btn.setAttribute('class', '클래스명')
+        document.querySelector('body').append(btn); 
+    }
+
+    
+    alertButtonWithName(true); 
+    
+
+    function alertButtonWithName(flag){ 
+        let arr = document.querySelectorAll('.클래스명'); 
+        if(flag===true){    
+            for(let i = 0 ; i < arr.length;i ++) { 
+                arr[i].addEventListener('click', function alertfunc(){
+                    alert("안뇽" +  " 버튼" + " " + arr[i].textContent); 
+                })
+            }
+        }
+        else{ 
+            for(let i = 0 ; i < arr.length;i ++) { 
+                arr[i].addEventListener('click', function alertfunc(){
+                    alert("안뇽"); 
+                })
+            }
+        }
+    }
+    
+
+
+</script>
