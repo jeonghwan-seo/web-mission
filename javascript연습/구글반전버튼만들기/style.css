@@ -1,0 +1,54 @@
+*{
+    /* border가 width에 포함 */
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: white; 
+  }
+  main{ 
+    position: absolute;
+    left : 50%; 
+    top : 30%; 
+    width: 600px; 
+    height: 500px; 
+    transform: translate(-50%, -50%);
+    margin-top: 300px;
+    text-align: center;
+  }
+
+
+  .header-nav-list-wrapper{ 
+    list-style: none;
+    padding:0; 
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;  
+    width: auto;
+    height: auto; 
+    border: 1px solid black; 
+  }
+
+
+  .image-logo{ 
+    width: 250px; 
+  }
+
+  .search-container{ 
+    position: relative; 
+    margin-top: 50px; 
+  }
+
+  #search-input{ 
+    width: 100%; 
+    height: 50px;
+    border-radius: 50px;
+    padding-left: 40px; 
+  }
+  .search-icon{ 
+    width:15px;
+    height:15px;
+    position: absolute;
+    top: 13px; 
+    left: 10px; 
+  }
