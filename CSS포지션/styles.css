@@ -1,0 +1,25 @@
+.box { 
+    border: solid black;
+    height : 100px;
+    width : 100px;   
+    position: relative;
+}
+.first { 
+    background-color: red;
+    left:30px; 
+    top:30px; 
+    z-index: 2;
+}
+
+.second {
+    background-color: yellow;
+    left:20px;
+    top:-10px;
+    z-index: 1;
+}
+
+.third { 
+    background-color: green;
+    top:-100px;
+    z-index:0; 
+}
